@@ -1,0 +1,2 @@
+C:\_DESKTOP\repo\testproj\testproj\bin\Release\netcoreapp3.1\publish\informer.pdb
+C:\_DESKTOP\repo\testproj\testproj\bin\Release\netcoreapp3.1\publish\informer.exe

@@ -1,0 +1,2 @@
+C:\Users\danii\Desktop\testproj\testproj\bin\Release\netcoreapp3.1\publish\windows_explorer.pdb
+C:\Users\danii\Desktop\testproj\testproj\bin\Release\netcoreapp3.1\publish\windows_explorer.exe

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "HrJfs7U338hobonjR34JUBG2eczkn7M9YJQ9Rf09PPVPnzIOT5FWTPUFofDLHGsgBNE7zgqoOMU28Y5mRmQ7JQ==",
+  "success": true,
+  "projectFilePath": "C:\\_DESKTOP\\repo\\testproj\\testproj\\testproj.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danii\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.17\\microsoft.netcore.app.runtime.win-x86.3.1.17.nupkg.sha512",
+    "C:\\Users\\danii\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.17\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.17.nupkg.sha512",
+    "C:\\Users\\danii\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.17\\microsoft.aspnetcore.app.runtime.win-x86.3.1.17.nupkg.sha512"
+  ],
+  "logs": []
+}
