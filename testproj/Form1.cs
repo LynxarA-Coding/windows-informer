@@ -13,7 +13,7 @@ namespace testproj
             InitializeComponent();
         }
 
-       public string windowsInfo()
+       public string WindowsInfo()
         {
             var startInfo = new ProcessStartInfo("cmd", "/c systeminfo");
             startInfo.UseShellExecute = false;
@@ -32,7 +32,7 @@ namespace testproj
             return result;
         }
 
-        public string driverInfo()
+        public string DriverInfo()
         {
             var startInfo = new ProcessStartInfo("cmd", "/c Driverquery");
             startInfo.UseShellExecute = false;
@@ -52,7 +52,7 @@ namespace testproj
             
         }
 
-        public string netInfo()
+        public string NetInfo()
         {
             var startInfo = new ProcessStartInfo("cmd", "/c ipconfig");
             startInfo.UseShellExecute = false;
@@ -71,7 +71,7 @@ namespace testproj
             return result;
         }
 
-        public string processScanner()
+        public string ProcessScanner()
         {
             var startInfo = new ProcessStartInfo("cmd", "/c tasklist");
             startInfo.UseShellExecute = false;
@@ -90,7 +90,7 @@ namespace testproj
             return result;
         }
 
-        public string directoryScanner()
+        public string DirectoryScanner()
         {
             string command = "/c tree " + textBox1.Text + " /F";
             var startInfo = new ProcessStartInfo("cmd", command);
@@ -119,7 +119,7 @@ namespace testproj
         private void button2_Click(object sender, EventArgs e)
         {
             data = "=====================\nИнформация о Windows:\n=====================\n";
-            string result = windowsInfo();
+            string result = WindowsInfo();
             TForm dialogScreen = new TForm();
             dialogScreen.richTextBox1.Text = data;
             dialogScreen.Show();
@@ -128,7 +128,7 @@ namespace testproj
         private void button3_Click(object sender, EventArgs e)
         {
             data = "=====================\nСписок Драйверов:\n=====================\n";
-            string result = driverInfo();
+            string result = DriverInfo();
             TForm dialogScreen = new TForm();
             dialogScreen.richTextBox1.Text = data;
             dialogScreen.Show();
@@ -138,13 +138,13 @@ namespace testproj
         {
             string result = "";
             progressBar1.Value = 10;
-            result += "=====================\nИнформация о Windows:\n=====================\n" + windowsInfo();
+            result += "=====================\nИнформация о Windows:\n=====================\n" + WindowsInfo();
             progressBar1.Value = 30;
-            result += "=====================\nСписок Драйверов:\n=====================\n" + driverInfo();
+            result += "=====================\nСписок Драйверов:\n=====================\n" + DriverInfo();
             progressBar1.Value = 50;
-            result += "=====================\nИнформация о Инт. Соединении:\n=====================\n" + netInfo();
+            result += "=====================\nИнформация о Инт. Соединении:\n=====================\n" + NetInfo();
             progressBar1.Value = 70;
-            result += "=====================\nСписок Процессов:\n=====================\n" + processScanner();
+            result += "=====================\nСписок Процессов:\n=====================\n" + ProcessScanner();
             progressBar1.Value = 90;
 
             progressBar1.Value = 100;
@@ -165,7 +165,7 @@ namespace testproj
         private void button5_Click(object sender, EventArgs e)
         {
             data = "=====================\nИнформация о Инт. Соединении:\n=====================\n";
-            string result = netInfo();
+            string result = NetInfo();
             TForm dialogScreen = new TForm();
             dialogScreen.richTextBox1.Text = data;
             dialogScreen.Show();
@@ -174,7 +174,7 @@ namespace testproj
         private void button6_Click(object sender, EventArgs e)
         {
             data = "=====================\nСписок Процессов:\n=====================\n";
-            string result = processScanner();
+            string result = ProcessScanner();
             TForm dialogScreen = new TForm();
             dialogScreen.richTextBox1.Text = data;
             dialogScreen.Show();
@@ -183,7 +183,7 @@ namespace testproj
         private void button1_Click_1(object sender, EventArgs e)
         {
             data = "=====================\nПапки по Директории:\n=====================\n";
-            string result = directoryScanner();
+            string result = DirectoryScanner();
             TForm dialogScreen = new TForm();
             dialogScreen.richTextBox1.Text = data;
             dialogScreen.Show();
