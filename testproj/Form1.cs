@@ -15,7 +15,7 @@ namespace testproj
 
        public string WindowsInfo()
         {
-            var startInfo = new ProcessStartInfo("cmd", "/c systeminfo");
+            var startInfo = new ProcessStartInfo("cmd", "/c chcp 65001 &&  chcp 65001 && systeminfo");
             startInfo.UseShellExecute = false;
             startInfo.CreateNoWindow = true;
             startInfo.RedirectStandardOutput = true;
@@ -34,7 +34,7 @@ namespace testproj
 
         public string DriverInfo()
         {
-            var startInfo = new ProcessStartInfo("cmd", "/c Driverquery");
+            var startInfo = new ProcessStartInfo("cmd", "/c chcp 65001 && Driverquery");
             startInfo.UseShellExecute = false;
             startInfo.CreateNoWindow = true;
             startInfo.RedirectStandardOutput = true;
@@ -54,7 +54,7 @@ namespace testproj
 
         public string NetInfo()
         {
-            var startInfo = new ProcessStartInfo("cmd", "/c ipconfig");
+            var startInfo = new ProcessStartInfo("cmd", "/c chcp 65001 && ipconfig");
             startInfo.UseShellExecute = false;
             startInfo.CreateNoWindow = true;
             startInfo.RedirectStandardOutput = true;
@@ -73,7 +73,7 @@ namespace testproj
 
         public string ProcessScanner()
         {
-            var startInfo = new ProcessStartInfo("cmd", "/c tasklist");
+            var startInfo = new ProcessStartInfo("cmd", "/c chcp 65001 &&  tasklist");
             startInfo.UseShellExecute = false;
             startInfo.CreateNoWindow = true;
             startInfo.RedirectStandardOutput = true;
@@ -92,7 +92,7 @@ namespace testproj
 
         public string DirectoryScanner()
         {
-            string command = "/c tree " + textBox1.Text + " /F";
+            string command = "/c chcp 65001 &&  tree " + textBox1.Text + " /F";
             var startInfo = new ProcessStartInfo("cmd", command);
             startInfo.UseShellExecute = false;
             startInfo.CreateNoWindow = true;
